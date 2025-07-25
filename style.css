@@ -405,6 +405,7 @@ nav ul {
   }
 
   .footer-links {
+    text-align: left;
     flex-direction: column;
     gap: 20px;
   }
