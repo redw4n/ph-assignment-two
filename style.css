@@ -1,7 +1,137 @@
 .noto-serif {
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "width" 100;
+  font-variation-settings: "width" 100; */
+}
+
+body {
+}
+
+/* nav bar  */
+nav {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.mobile-only {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.desktop-only {
+  display: list-item;
+}
+
+/* hero section  */
+.hero-banner {
+  margin-top: 120px;
+  margin-left: 150px;
+  margin-right: 150px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title p {
+  width: 500px;
+  justify-content: center;
+}
+
+/* selling section  */
+
+.selling-title {
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.product-container {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+.product p {
+  text-align: center;
+  align-items: center;
+}
+
+.cart-btn {
+  background-color: #e95a08;
+  justify-content: center;
+  color: white;
+  width: 270px;
+  height: 50px;
+}
+
+/* Styles for mobile display */
+@media screen and (max-width: 576px) {
+  /* nav bar  */
+  nav a img {
+    margin-left: 16px;
+  }
+
+  .list-item {
+    margin-right: 16px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /* hero section  */
+  .hero-banner {
+    flex-direction: column-reverse;
+    margin: 40px 20px 0 20px;
+  }
+
+  .hero-title p {
+    width: 100%;
+  }
+
+  .hero-img img {
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* selling section  */
+  .product-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart-btn {
+    width: 100%;
+    height: 45px;
+  }
 }
