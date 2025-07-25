@@ -81,6 +81,31 @@ nav ul {
   height: 50px;
 }
 
+/* info section  */
+.info-containter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.info-containter img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 550px;
+}
+
+.flower-info h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.flower-info ul li {
+  list-style-type: disc;
+}
+
 /* Styles for mobile display */
 @media screen and (max-width: 576px) {
   /* nav bar  */
